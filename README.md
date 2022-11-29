@@ -41,7 +41,7 @@ Async Server Implemented with Tornado
     else if id == "all":
     	returns all image from cloud (Directory)
 
-## Access UI on 8888
+## Access UI on http://localhost:8888
 
 # Note :
 
@@ -65,7 +65,7 @@ Note:
 
 # Starting service locally (Without Dockerization):
 
-=> Run start.sh <=
+=> sh start.sh <=
 
 # To Train against your own Dataset :
 
