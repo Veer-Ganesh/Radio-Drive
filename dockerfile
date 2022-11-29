@@ -9,7 +9,6 @@ RUN cat > /var/log/supervisor/supervisor.log
 WORKDIR /app
 RUN mkdir cloud
 
-
 COPY ./requirements.txt .
 RUN pip3 install -U pip wheel cmake
 RUN pip3 install --upgrade pip \
@@ -17,5 +16,7 @@ RUN pip3 install --upgrade pip \
         && pip install --no-cache-dir -r requirements.txt
 
 COPY . .
+
+EXPOSE 80
 
 CMD ["/usr/bin/supervisord", "-c", "./supervisord.conf"]
