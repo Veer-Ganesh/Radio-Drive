@@ -15,4 +15,4 @@ RUN pip3 install --upgrade pip \
 
 COPY . .
 
-ENTRYPOINT ["/usr/bin/supervisord", "-c", "./supervisord.conf"]
+CMD ["/usr/bin/supervisord", "-c", "./supervisord.conf"]
