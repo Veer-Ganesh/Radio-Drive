@@ -41,20 +41,7 @@ Async Server Implemented with Tornado
     else if id == "all":
     	returns all image from cloud (Directory)
 
-Access UI at port 8888
-
-# UI Server (ui_server.py)
-
-![FLASK](https://flask.palletsprojects.com/en/2.2.x/_images/flask-logo.png)
-
-```diff
-- Flask based static-file serving server
-- Serves the built react-app
-```
-
-Feel free to checkout [Flask](https://flask.palletsprojects.com/en/2.2.x/)
-
-## Access UI at port 3000
+## Access UI on 8888
 
 # Note :
 
