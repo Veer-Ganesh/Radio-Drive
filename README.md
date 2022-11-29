@@ -2,7 +2,7 @@
 
 ML Based Image Filtering ❤️
 
-# Cloud Watcher Service : (cloud_watcher.py)
+## Cloud Watcher Service : (cloud_watcher.py)
 
 Watches over cloud directory for file changes ( uses [watchdog](https://pypi.org/project/watchdog/) ) =>
 
@@ -14,7 +14,7 @@ Watches over cloud directory for file changes ( uses [watchdog](https://pypi.org
     			ML Model learns through reinforcement
     	No face ? ## skip
 
-# Server (server.py)
+## Server (server.py)
 
 ![Tornado](https://www.tornadoweb.org/en/stable/_images/tornado.png)
 
@@ -34,7 +34,7 @@ Async Server Implemented with Tornado
     	check redis for any images related to it !
     	send array of known_image filenames
 
-4./api/get_image => pass in id through Query params and get corresponding base64 encoded image served from cloud ().
+4./api/get_image => pass in id through Query params and get corresponding base64 encoded image served from cloud.
 
     if id == "uuid":
     	returns particular image
@@ -43,7 +43,7 @@ Async Server Implemented with Tornado
 
 ### Access UI on http://localhost:8888
 
-# Note :
+### Note :
 
     1. All data are volatile, meaning if container is delete. Uploaded images get deleted as well ! (Since this is a POC app)
 
@@ -51,7 +51,7 @@ Async Server Implemented with Tornado
 
     3. More improvisations are on the way.
 
-# Test images are provided in camera, storage directory
+## Test images are provided in camera, storage directory
 
     Step 1 : U can upload images from camera directory. (Typical use-case uploading from mobile)[dont bulk upload]=> for now not designed for prod
 
@@ -65,7 +65,7 @@ Note:
 
 # Starting service locally (Without Dockerization):
 
-=> sh start.sh <=
+    cd /${WORKING_DIR} && sh ./start.sh
 
 # To Train against your own Dataset :
 
