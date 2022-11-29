@@ -9,7 +9,7 @@ from handlers.search_handler import SearchHandler
 from handlers.getImage_handler import GetImageHandler
 from handlers.ui_handler import UIHandler,UIDataHandler
 
-PORT = 8888
+PORT = 80
 YELLOW='\033[1;33m'
 NC='\033[0m'
 
