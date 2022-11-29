@@ -1,5 +1,6 @@
-import asyncio,os
+import asyncio
 import tornado.web
+import tornado.gen
 from tornado.httpserver import HTTPServer
 from tornado.routing import RuleRouter,Rule,PathMatches
 from handlers.login_handler import LoginHandler
@@ -11,11 +12,6 @@ from handlers.ui_handler import UIHandler,UIDataHandler
 PORT = 8888
 YELLOW='\033[1;33m'
 NC='\033[0m'
-
-import json
-import tornado.web
-import tornado.gen
-
 
 async def main():
     server_app = tornado.web.Application([
