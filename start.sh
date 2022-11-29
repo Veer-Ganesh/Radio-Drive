@@ -17,8 +17,8 @@ echo "\n${CYAN}Initiating cloud watcher service !${NC}\n"
 python cloud_watcher.py &
 sleep 3
 
-echo "\n${BLUE}Stopping any service at 8888${NC} \n"
-lsof -i tcp:8888 
+echo "\n${BLUE}Stopping any service at 80${NC} \n"
+lsof -i tcp:80 
 sleep 3
 
 echo "${GREEN}Starting API Service...  !${NC}"
