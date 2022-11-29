@@ -27,8 +27,8 @@ class FaceWise_V1():
         with open('model.dat', 'wb') as f:
             pickle.dump(self.all_face_encodings, f)
         print('Learned new encoding for', len(self.known_face_encodings), 'images.')
-        self.reload = True
-        self.learn_faces()
+        # self.reload = True
+        # self.learn_faces()
         
     def learn_faces(self):
         if self.learn :
@@ -45,17 +45,16 @@ class FaceWise_V1():
                                 self.all_face_encodings[folder]=face_encoding
                             except Exception as e:
                                 print(e)
-                            
 
             with open('model.dat', 'wb') as f:
                 pickle.dump(self.all_face_encodings, f)
             print('Learned encoding for', len(self.known_face_encodings), 'images.')
-        elif not self.learn or self.reload:
-            print(f"{'Re-Loading' if self.reload else 'Loading'} Model into Memory !")
-            with open("model.dat",'rb') as f:
-                self.all_face_encodings = pickle.load(f)
-            self.known_face_names=list(self.all_face_encodings.keys())
-            self.known_face_encodings=np.array(list(self.all_face_encodings.values()))
+        # elif not self.learn or self.reload:
+        #     print(f"{'Re-Loading' if self.reload else 'Loading'} Model into Memory !")
+        #     with open("model.dat",'rb') as f:
+        #         self.all_face_encodings = pickle.load(f)
+        #     self.known_face_names=list(self.all_face_encodings.keys())
+        #     self.known_face_encodings=np.array(list(self.all_face_encodings.values()))
             
             
     def find_faces(self,img_path):

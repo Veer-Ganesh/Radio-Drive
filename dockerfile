@@ -7,7 +7,7 @@ RUN mkdir -p /var/log/supervisor
 RUN cat > /var/log/supervisor/supervisor.log
 
 WORKDIR /app
-RUN mkdir /cloud
+RUN mkdir cloud
 
 
 COPY ./requirements.txt .
