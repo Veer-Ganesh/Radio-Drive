@@ -63,11 +63,11 @@ Note:
 
     you can also Upload and Test it against your own images
 
-# Starting service locally (Without Dockerization):
+## Starting service locally (Without Dockerization):
 
     cd /${WORKING_DIR} && sh ./start.sh
 
-# To Train against your own Dataset :
+## To Train against your own Dataset :
 
 Replace data in dataset/actual with label/images.jpg
 
@@ -85,7 +85,7 @@ Replace data in dataset/actual with label/images.jpg
 
     ONCE_LEARNT => it saved the model to modal.dat file ( Clever, so that can be loaded next time !)
 
-# Supervisor :
+## Supervisor :
 
 ![Supervisord](https://avatars.githubusercontent.com/u/5429470?s=280&v=4)
 
