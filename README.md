@@ -22,11 +22,11 @@ Async Server Implemented with Tornado
 
     Serves following route :
 
-    1./api/upload => to upload image to cloud ( cloud here is nothing but a local directory )
+    1.*/api/upload => to upload image to cloud ( cloud here is nothing but a local directory )
 
-    2./api/login => login api ( default cred :=> USERNAME = "veer" PASSWORD = "password")
+    2.*/api/login => login api ( default cred :=> USERNAME = "veer" PASSWORD = "password")
 
-    3./api/search => gets image in multipart request :
+    3.*/api/search => gets image in multipart request :
 
 ## Search API Working
 
@@ -41,7 +41,7 @@ Async Server Implemented with Tornado
     else if id == "all":
     	returns all image from cloud (Directory)
 
-## Access UI on http://localhost:8888
+### Access UI on http://localhost:8888
 
 # Note :
 
@@ -51,13 +51,13 @@ Async Server Implemented with Tornado
 
     3. More improvisations are on the way.
 
-# Test images are provided in camera , storage
+# Test images are provided in camera, storage directory
 
     Step 1 : U can upload images from camera directory. (Typical use-case uploading from mobile)[dont bulk upload]=> for now not designed for prod
 
-    Step 2 : Once uploaded.
+    Step 2 : Once uploaded to cloud.
 
-    Step 3 : Search from images from storage directory.
+    Step 3 : Search from images in storage directory.
 
 Note:
 
