@@ -45,7 +45,7 @@ Async Server Implemented with Tornado
 
 # Note :
 
-    1. All data are volatile, meaning if container is delete. Uploaded images get deleted as well ! (Since this is a example)
+    1. All data are volatile, meaning if container is delete. Uploaded images get deleted as well ! (Since this is a POC app)
 
     2. Internally uses Redis to store mapping and encodings.
 
@@ -53,11 +53,11 @@ Async Server Implemented with Tornado
 
 # Test images are provided in camera , storage
 
-    Step 1 : U can upload images from camera directory. (Typical use-case)[dont bulk upload]=> for now not designed for it
+    Step 1 : U can upload images from camera directory. (Typical use-case uploading from mobile)[dont bulk upload]=> for now not designed for prod
 
     Step 2 : Once uploaded.
 
-    Step 3 : Images from storage directory.
+    Step 3 : Search from images from storage directory.
 
 Note:
 
@@ -99,13 +99,8 @@ Checkout => [MyDocker](https://hub.docker.com/r/veyro9/radio-drive)
 
     docker pull veyro9/radio-drive
 
-    docker run -p 8888:8888 -p 3000:3000 -d veyro9/radio-drive
+    docker run -p 8888:8888 -p -d veyro9/radio-drive
 
-We are publishing port :
-
-    8888 => API service
-
-    3000 => UI service
 
 (Feel free to map to any PORT of your choice)
 
